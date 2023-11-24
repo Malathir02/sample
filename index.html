@@ -5,7 +5,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <style>
-    header {
+
+header {
       width: auto;
       height: 50px;
       padding-right: 300px;
@@ -24,33 +25,50 @@
     .head {
       font-size: 25px;
       float: left;
-      padding-left: 300px;
-    }
+      padding-left: 300px;}
+
     .hero-img {
-      width: 85%;
-      height: 500px;
+      width:min-content;
       background-image: url(https://as1.ftcdn.net/v2/jpg/01/00/45/00/1000_F_100450052_UzH5q5d5bC7RNxLJgKEhcAs0sRepkWf4.jpg);
-      background-size: 100% 100%;
-      margin-left: 100px;
-    }
-    .hero-img-head {
       text-align: center;
-      padding-top: 200px;
-      font-size: 30px;
+      color: rgb(12, 11, 11);
+      position:relative;
+    top:50%;
+    left:50%;
+    
+    cursor:pointer;
     }
-    .hero-img-p {
-      font-size: 40px;
-      padding-left: 300px;
-      margin-top: 2px;
-    }
-    .hero-img-button {
-      width: 200px;
-      height: 50px;
-      margin-left: 500px;
-      margin-top: 20px;
-      background-color: black;
-      color: aliceblue;
-    }
+    @media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
+    .hero-img h1 {
+  font-size: 2.5em;
+  padding: 10%;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.hero-img-p {
+  font-size: 1.5em;
+  margin: 10px 0;
+  
+}
+
+.hero-img-button {
+  width: 40%;
+  max-width: 15em;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+
     .features {
       column-width: 100px;
       margin-right: 10px;
@@ -159,19 +177,74 @@
       background-color: #02b8dd;
       color: #fff;
     }
-    .footer-p {
-      float: left;
-      margin-top: 15px;
+    footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
     }
+
+    .footer-p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
     .footer-td {
-      width: 520px;
-      float: right;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .footer-td td {
+      padding: 10px;
+    }
+
+    .footer-td h4 {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .head {
+        padding-left: 10px;
+      }
+
+      li {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+
+      .hero-img-button {
+        margin-left: 10%;
+      }
+
+      .features {
+        padding: 10px;
+      }
+
+      .feature {
+        width: 100%;
+      }
+
+      .primary-content,
+      .secondary,
+      .heard,
+      footer {
+        padding: 20px 10px;
+      }
+
+      .footer-td {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h2 class="head">Simply.</h2>
+    <!-- <h2 class="head">Simply.</h2> -->
     <nav>
       <ol>
         <li><a href="#blog">BLOG</a></li>
@@ -240,7 +313,7 @@
         <a href="#" class="view-link">View more</a>
       </div>
     </span>
-    <span class="secondary-content-span" style="background-image: url(https://as1.ftcdn.net/v2/jpg/00/84/65/28/1000_F_84652896_NBmbMTSxrXrEtnnbXTDUblN9UnBC0WLD.jpg); object-fit: cover;">
+    <span class="secondary-content-span" style="background-image: url(AdobeStock_145805760_Preview.jpeg);">
       <div class="overlay">
         <h4>Secondary Content</h4>
         <p><small> Learning about deploying web applications to servers.or using cloud platforms like AWS, Google
